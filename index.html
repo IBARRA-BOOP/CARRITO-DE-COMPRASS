@@ -1,0 +1,112 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda de Informática</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orbit"></div>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Tecnología que impulsa tu día</p>
+      <h1>Tienda de informática</h1>
+      <p class="subtitle">Productos esenciales con precios claros y un carrito simple para empezar rápido.</p>
+    </div>
+    <div class="cart-card" aria-live="polite">
+      <div class="cart-header">
+        <h2>Carrito</h2>
+        <span class="badge" id="cart-count">0</span>
+      </div>
+      <div class="cart-body" id="cart-items">
+        <p class="cart-empty">Aún no agregas productos.</p>
+      </div>
+      <div class="cart-footer">
+        <span>Total</span>
+        <strong id="cart-total">$0.00</strong>
+      </div>
+      <button class="btn btn-ghost" id="clear-cart" type="button">Vaciar carrito</button>
+    </div>
+  </header>
+
+  <main class="catalog">
+    <article class="product" data-name="Laptop Nova 15" data-price="899">
+      <div class="product-top">
+        <span class="tag">Portátiles</span>
+        <h3>Laptop Nova 15</h3>
+        <p class="desc">Intel i5, 16 GB RAM, SSD 512 GB, pantalla 15.6".</p>
+      </div>
+      <div class="product-bottom">
+        <span class="price">$899.00</span>
+        <button class="btn btn-primary" type="button">Agregar al carrito</button>
+      </div>
+    </article>
+
+    <article class="product" data-name="Monitor Aurora 27" data-price="249">
+      <div class="product-top">
+        <span class="tag">Pantallas</span>
+        <h3>Monitor Aurora 27</h3>
+        <p class="desc">QHD 27", 165 Hz, panel IPS antirreflejo.</p>
+      </div>
+      <div class="product-bottom">
+        <span class="price">$249.00</span>
+        <button class="btn btn-primary" type="button">Agregar al carrito</button>
+      </div>
+    </article>
+
+    <article class="product" data-name="Teclado Pulse RGB" data-price="89">
+      <div class="product-top">
+        <span class="tag">Periféricos</span>
+        <h3>Teclado Pulse RGB</h3>
+        <p class="desc">Mecánico, switches lineales, cuerpo de aluminio.</p>
+      </div>
+      <div class="product-bottom">
+        <span class="price">$89.00</span>
+        <button class="btn btn-primary" type="button">Agregar al carrito</button>
+      </div>
+    </article>
+
+    <article class="product" data-name="Mouse Orbit Pro" data-price="59">
+      <div class="product-top">
+        <span class="tag">Periféricos</span>
+        <h3>Mouse Orbit Pro</h3>
+        <p class="desc">Sensor 26K DPI, 7 botones, peso ajustable.</p>
+      </div>
+      <div class="product-bottom">
+        <span class="price">$59.00</span>
+        <button class="btn btn-primary" type="button">Agregar al carrito</button>
+      </div>
+    </article>
+
+    <article class="product" data-name="SSD Flux 1TB" data-price="129">
+      <div class="product-top">
+        <span class="tag">Almacenamiento</span>
+        <h3>SSD Flux 1TB</h3>
+        <p class="desc">NVMe Gen4, lectura 7,000 MB/s.</p>
+      </div>
+      <div class="product-bottom">
+        <span class="price">$129.00</span>
+        <button class="btn btn-primary" type="button">Agregar al carrito</button>
+      </div>
+    </article>
+
+    <article class="product" data-name="Router Mesh Link" data-price="149">
+      <div class="product-top">
+        <span class="tag">Redes</span>
+        <h3>Router Mesh Link</h3>
+        <p class="desc">Wi-Fi 6, cobertura 250 m², app móvil.</p>
+      </div>
+      <div class="product-bottom">
+        <span class="price">$149.00</span>
+        <button class="btn btn-primary" type="button">Agregar al carrito</button>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
