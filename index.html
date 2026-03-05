@@ -16,6 +16,16 @@
       <p class="eyebrow">Tecnología que impulsa tu día</p>
       <h1>Tienda de informática</h1>
       <p class="subtitle">Productos esenciales con precios claros y un carrito simple para empezar rápido.</p>
+      <div class="hero-actions">
+        <button class="btn btn-ghost theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+          Modo oscuro
+        </button>
+        <div class="currency-toggle" role="group" aria-label="Seleccion de moneda">
+          <span>Moneda</span>
+          <button class="btn btn-ghost currency-btn" type="button" data-currency="GTQ" aria-pressed="true">GTQ</button>
+          <button class="btn btn-ghost currency-btn" type="button" data-currency="USD" aria-pressed="false">USD</button>
+        </div>
+      </div>
     </div>
     <div class="cart-card" aria-live="polite">
       <div class="cart-header">
@@ -27,86 +37,220 @@
       </div>
       <div class="cart-footer">
         <span>Total</span>
-        <strong id="cart-total">$0.00</strong>
+        <strong id="cart-total">Q0.00</strong>
       </div>
       <button class="btn btn-ghost" id="clear-cart" type="button">Vaciar carrito</button>
     </div>
   </header>
 
   <main class="catalog">
-    <article class="product" data-name="Laptop Nova 15" data-price="899">
+    <article class="product" data-name="Laptop Nova 15" data-price-gtq="6899">
+      <button class="media-button" type="button" data-preview="assets/laptop.svg" aria-label="Vista previa de Laptop Nova 15">
+        <img src="assets/laptop.svg" alt="Laptop Nova 15" loading="lazy" />
+      </button>
       <div class="product-top">
         <span class="tag">Portátiles</span>
         <h3>Laptop Nova 15</h3>
         <p class="desc">Intel i5, 16 GB RAM, SSD 512 GB, pantalla 15.6".</p>
       </div>
       <div class="product-bottom">
-        <span class="price">$899.00</span>
+        <span class="price" data-role="price">Q6,899.00</span>
         <button class="btn btn-primary" type="button">Agregar al carrito</button>
       </div>
     </article>
 
-    <article class="product" data-name="Monitor Aurora 27" data-price="249">
+    <article class="product" data-name="Monitor Aurora 27" data-price-gtq="1899">
+      <button class="media-button" type="button" data-preview="assets/monitor.svg" aria-label="Vista previa de Monitor Aurora 27">
+        <img src="assets/monitor.svg" alt="Monitor Aurora 27" loading="lazy" />
+      </button>
       <div class="product-top">
         <span class="tag">Pantallas</span>
         <h3>Monitor Aurora 27</h3>
         <p class="desc">QHD 27", 165 Hz, panel IPS antirreflejo.</p>
       </div>
       <div class="product-bottom">
-        <span class="price">$249.00</span>
+        <span class="price" data-role="price">Q1,899.00</span>
         <button class="btn btn-primary" type="button">Agregar al carrito</button>
       </div>
     </article>
 
-    <article class="product" data-name="Teclado Pulse RGB" data-price="89">
+    <article class="product" data-name="Teclado Pulse RGB" data-price-gtq="599">
+      <button class="media-button" type="button" data-preview="assets/keyboard.svg" aria-label="Vista previa de Teclado Pulse RGB">
+        <img src="assets/keyboard.svg" alt="Teclado Pulse RGB" loading="lazy" />
+      </button>
       <div class="product-top">
         <span class="tag">Periféricos</span>
         <h3>Teclado Pulse RGB</h3>
         <p class="desc">Mecánico, switches lineales, cuerpo de aluminio.</p>
       </div>
       <div class="product-bottom">
-        <span class="price">$89.00</span>
+        <span class="price" data-role="price">Q599.00</span>
         <button class="btn btn-primary" type="button">Agregar al carrito</button>
       </div>
     </article>
 
-    <article class="product" data-name="Mouse Orbit Pro" data-price="59">
+    <article class="product" data-name="Mouse Orbit Pro" data-price-gtq="349">
+      <button class="media-button" type="button" data-preview="assets/mouse.svg" aria-label="Vista previa de Mouse Orbit Pro">
+        <img src="assets/mouse.svg" alt="Mouse Orbit Pro" loading="lazy" />
+      </button>
       <div class="product-top">
         <span class="tag">Periféricos</span>
         <h3>Mouse Orbit Pro</h3>
         <p class="desc">Sensor 26K DPI, 7 botones, peso ajustable.</p>
       </div>
       <div class="product-bottom">
-        <span class="price">$59.00</span>
+        <span class="price" data-role="price">Q349.00</span>
         <button class="btn btn-primary" type="button">Agregar al carrito</button>
       </div>
     </article>
 
-    <article class="product" data-name="SSD Flux 1TB" data-price="129">
+    <article class="product" data-name="SSD Flux 1TB" data-price-gtq="899">
+      <button class="media-button" type="button" data-preview="assets/ssd.svg" aria-label="Vista previa de SSD Flux 1TB">
+        <img src="assets/ssd.svg" alt="SSD Flux 1TB" loading="lazy" />
+      </button>
       <div class="product-top">
         <span class="tag">Almacenamiento</span>
         <h3>SSD Flux 1TB</h3>
         <p class="desc">NVMe Gen4, lectura 7,000 MB/s.</p>
       </div>
       <div class="product-bottom">
-        <span class="price">$129.00</span>
+        <span class="price" data-role="price">Q899.00</span>
         <button class="btn btn-primary" type="button">Agregar al carrito</button>
       </div>
     </article>
 
-    <article class="product" data-name="Router Mesh Link" data-price="149">
+    <article class="product" data-name="Router Mesh Link" data-price-gtq="999">
+      <button class="media-button" type="button" data-preview="assets/router.svg" aria-label="Vista previa de Router Mesh Link">
+        <img src="assets/router.svg" alt="Router Mesh Link" loading="lazy" />
+      </button>
       <div class="product-top">
         <span class="tag">Redes</span>
         <h3>Router Mesh Link</h3>
         <p class="desc">Wi-Fi 6, cobertura 250 m², app móvil.</p>
       </div>
       <div class="product-bottom">
-        <span class="price">$149.00</span>
+        <span class="price" data-role="price">Q999.00</span>
+        <button class="btn btn-primary" type="button">Agregar al carrito</button>
+      </div>
+    </article>
+
+    <article class="product" data-name="GPU Vortex 8GB" data-price-gtq="2599">
+      <button class="media-button" type="button" data-preview="assets/gpu.svg" aria-label="Vista previa de GPU Vortex 8GB">
+        <img src="assets/gpu.svg" alt="GPU Vortex 8GB" loading="lazy" />
+      </button>
+      <div class="product-top">
+        <span class="tag">Componentes</span>
+        <h3>GPU Vortex 8GB</h3>
+        <p class="desc">GDDR6, doble ventilador, ideal para 1080p.</p>
+      </div>
+      <div class="product-bottom">
+        <span class="price" data-role="price">Q2,599.00</span>
+        <button class="btn btn-primary" type="button">Agregar al carrito</button>
+      </div>
+    </article>
+
+    <article class="product" data-name="Audífonos Nebula" data-price-gtq="429">
+      <button class="media-button" type="button" data-preview="assets/headset.svg" aria-label="Vista previa de Audífonos Nebula">
+        <img src="assets/headset.svg" alt="Audífonos Nebula" loading="lazy" />
+      </button>
+      <div class="product-top">
+        <span class="tag">Audio</span>
+        <h3>Audífonos Nebula</h3>
+        <p class="desc">Sonido envolvente, micrófono con cancelación.</p>
+      </div>
+      <div class="product-bottom">
+        <span class="price" data-role="price">Q429.00</span>
+        <button class="btn btn-primary" type="button">Agregar al carrito</button>
+      </div>
+    </article>
+
+    <article class="product" data-name="Webcam Stream 4K" data-price-gtq="799">
+      <button class="media-button" type="button" data-preview="assets/webcam.svg" aria-label="Vista previa de Webcam Stream 4K">
+        <img src="assets/webcam.svg" alt="Webcam Stream 4K" loading="lazy" />
+      </button>
+      <div class="product-top">
+        <span class="tag">Streaming</span>
+        <h3>Webcam Stream 4K</h3>
+        <p class="desc">Sensor 4K, enfoque automático, tapa de privacidad.</p>
+      </div>
+      <div class="product-bottom">
+        <span class="price" data-role="price">Q799.00</span>
+        <button class="btn btn-primary" type="button">Agregar al carrito</button>
+      </div>
+    </article>
+
+    <article class="product" data-name="Impresora JetPro" data-price-gtq="1199">
+      <button class="media-button" type="button" data-preview="assets/printer.svg" aria-label="Vista previa de Impresora JetPro">
+        <img src="assets/printer.svg" alt="Impresora JetPro" loading="lazy" />
+      </button>
+      <div class="product-top">
+        <span class="tag">Oficina</span>
+        <h3>Impresora JetPro</h3>
+        <p class="desc">Wi-Fi, doble bandeja, impresión a color.</p>
+      </div>
+      <div class="product-bottom">
+        <span class="price" data-role="price">Q1,199.00</span>
         <button class="btn btn-primary" type="button">Agregar al carrito</button>
       </div>
     </article>
   </main>
 
+  <section class="checkout" id="checkout">
+    <div class="checkout-card">
+      <div class="checkout-header">
+        <h2>Pago</h2>
+        <div class="checkout-total">
+          <span>Total a pagar</span>
+          <strong id="checkout-total">Q0.00</strong>
+        </div>
+      </div>
+      <p class="checkout-subtitle">Valida tu pago y genera un recibo en PDF.</p>
+      <form id="payment-form" novalidate>
+        <label class="field">
+          <span>Nombre completo</span>
+          <input type="text" id="payer-name" name="payer-name" autocomplete="name" placeholder="Ej: Ana Lopez" required />
+        </label>
+        <label class="field">
+          <span>Correo</span>
+          <input type="email" id="payer-email" name="payer-email" autocomplete="email" value="@gmail.com" pattern=".+@gmail\.com" title="Solo correos @gmail.com" required />
+        </label>
+        <label class="field">
+          <span>Numero de tarjeta</span>
+          <input type="text" id="card-number" name="card-number" inputmode="numeric" autocomplete="cc-number" placeholder="4111 1111 1111 1111" maxlength="19" required />
+        </label>
+        <div class="field-row">
+          <label class="field">
+            <span>Vencimiento</span>
+            <input type="text" id="card-expiry" name="card-expiry" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/AA" required />
+          </label>
+          <label class="field">
+            <span>CVV</span>
+            <input type="password" id="card-cvv" name="card-cvv" inputmode="numeric" autocomplete="cc-csc" placeholder="123" maxlength="3" required />
+          </label>
+        </div>
+        <div class="checkout-actions">
+          <button class="btn btn-primary" id="pay-btn" type="submit">Pagar y generar PDF</button>
+          <p class="checkout-message" id="payment-message" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Vista previa del producto">
+      <button class="btn btn-ghost lightbox-close" id="lightbox-close" type="button">Cerrar</button>
+      <img id="lightbox-image" alt="" />
+    </div>
+  </div>
+
+  <div class="thank-you" id="thank-you" aria-hidden="true">
+    <div class="thank-you-card" role="status" aria-live="polite">
+      <p class="thank-title">Gracias por tu compra</p>
+      <p class="thank-subtitle">Tu recibo se ha descargado.</p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

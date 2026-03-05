@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="SSD Flux 1TB">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e4f6e8" />
+      <stop offset="100%" stop-color="#a5e1b4" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)" />
+  <rect x="160" y="200" width="480" height="200" rx="24" fill="#1e2d24" />
+  <rect x="200" y="240" width="400" height="120" rx="18" fill="#264a34" />
+  <circle cx="230" cy="230" r="10" fill="#7de29b" />
+  <circle cx="570" cy="230" r="10" fill="#7de29b" />
+  <text x="50" y="80" font-family="Space Grotesk, Arial" font-size="28" fill="#1e2d24">SSD Flux 1TB</text>
+</svg>

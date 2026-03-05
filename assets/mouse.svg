@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Mouse Orbit Pro">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="1" y2="0">
+      <stop offset="0%" stop-color="#f9f2d0" />
+      <stop offset="100%" stop-color="#f4c58e" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)" />
+  <ellipse cx="400" cy="320" rx="140" ry="190" fill="#1f2933" />
+  <rect x="392" y="200" width="16" height="70" rx="8" fill="#f08a3c" />
+  <line x1="400" y1="200" x2="400" y2="510" stroke="#2f3a45" stroke-width="2" />
+  <ellipse cx="400" cy="320" rx="90" ry="130" fill="none" stroke="#3f4c58" stroke-width="4" />
+  <text x="50" y="80" font-family="Space Grotesk, Arial" font-size="28" fill="#1f2933">Mouse Orbit Pro</text>
+</svg>

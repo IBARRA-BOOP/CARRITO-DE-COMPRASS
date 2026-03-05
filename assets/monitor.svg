@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Monitor Aurora 27">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="1" y2="0">
+      <stop offset="0%" stop-color="#d7f5ff" />
+      <stop offset="100%" stop-color="#8ed6f5" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)" />
+  <rect x="120" y="120" width="560" height="320" rx="18" fill="#1d1f24" />
+  <rect x="150" y="150" width="500" height="260" rx="12" fill="#2a9d8f" />
+  <rect x="360" y="450" width="80" height="60" rx="12" fill="#30343b" />
+  <rect x="280" y="500" width="240" height="30" rx="15" fill="#3f4450" />
+  <text x="50" y="80" font-family="Space Grotesk, Arial" font-size="28" fill="#1d1f24">Monitor Aurora 27</text>
+</svg>
